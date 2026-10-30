@@ -16,7 +16,7 @@ Do machine learning approaches (ElasticNet penalized logistic regression, Random
 We expect to find that:
 1. **Discrimination Limit:** XGBoost and Random Forest will achieve discrimination (AUC-ROC) comparable to or slightly higher than ElasticNet, but without clinically significant net benefit.
 2. **Calibration Deficit:** The raw probability calibration of tree-based models will be inferior to logistic regression, requiring post-hoc recalibration (Platt scaling or Isotonic regression).
-3. **Sex Heterogeneity:** Predictive performance and calibration will vary significantly across biological sexes, reflecting the historical tendency of Framingham-based risk models to overestimate risk in women.
+3. **Sex Heterogeneity:** Predictive discrimination (PR-AUC) will be significantly lower in women than in men, and uncalibrated models will exhibit a higher rate of risk overestimation in female participants relative to male participants—directly reflecting the historical calibration deficit of Framingham-derived risk markers in lower-incidence female subgroups.
 
 ---
 
